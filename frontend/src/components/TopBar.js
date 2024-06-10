@@ -14,7 +14,7 @@ export default function TopBar({mode,setMode}) {
         <AppBar position="static">
             <Toolbar className="nav" style={{ justifyContent: 'space-between' }}> 
                 <div style={{ float:'left'}}>
-                    <h1 className="title">Task Manager</h1>
+                    <h1 className="title">Task Track</h1>
                 </div>
                 <div className='button-group' >
                     <IconButton onClick={()=> setMode(mode==="light"?"dark":"light")}>
