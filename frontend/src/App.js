@@ -3,8 +3,6 @@ import AddTask from './components/AddTask';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useState } from 'react';
-import Login from './components/Login';
-import Register from './components/Register';
 import { Routes, Route } from 'react-router-dom';
 import EditTask from './components/EditTask';
 import TaskList from './components/TaskList';
