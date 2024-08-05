@@ -23,7 +23,6 @@ export default function TopBar({mode,setMode}) {
                     <Button className='button' style={{border:'none'}} variant="text" color="inherit" onClick={() => navigate("/home")}>Home</Button>
                     <Button className='button' style={{border:'none'}} variant="text" color="inherit" onClick={()=>navigate("/tasklist")}>Tasks</Button>
                     <Button className='button' style={{border:'none'}} variant="text" color="inherit" onClick={() => navigate("/addtask")}>Add Task</Button>
-                    {/* <Button className='button' style={{border:'none'}} variant="text" color="inherit" onClick={() => navigate("/login")}>Login</Button> */}
                 </div>
             </Toolbar>
         </AppBar>
