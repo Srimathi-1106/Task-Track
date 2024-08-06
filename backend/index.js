@@ -2,8 +2,6 @@ import express from "express"
 import { MongoClient } from 'mongodb'
 import { ObjectId } from "mongodb";
 import cors from "cors";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
 
 const app=express()
 
@@ -13,21 +11,10 @@ await client.connect();
 console.log("Database successfully connected!");
 
 
-
 app.use(express.json());   // to check input obtained is in json format by middleware
 app.use(cors())
 
 
-const auth = (request,response,next)=>{
-    try{
-        const token=request.header("backend-token"); // backend-token is keyname
-        jwt.verify(token,"student");
-        next();
-    }
-    catch(error){
-        response.status(401).send({message:error.message});
-    }
-}
 
 app.get("/",function(request, response){
     console.log("hello");
