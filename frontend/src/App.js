@@ -25,8 +25,6 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Paper style={{minHeight:"100vh", borderRadius:"0%"}} elevation={9}>
           <Routes>
-            {/* <Route path="/register" element={<Register/>}/>
-            <Route path="/login" element={<Login/>}/> */}
             <Route path="/" element={<Portal mode={mode} setMode={setMode}/>}>
               <Route path="home" element={<Home/>}/>
               <Route path="tasklist" element={<TaskList/>}/>
